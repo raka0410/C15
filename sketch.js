@@ -73,7 +73,7 @@ function draw() {
   //creating continous enemies
   var select_balloon = Math.round(random(1,4));
   
-  if (World.frameCount % 700 == 0) {
+  if (World.frameCount % 100 == 0) {
     switch(select_balloon ){
       case 1: redBalloon();
       break;
@@ -107,7 +107,7 @@ function draw() {
 
   }
 
-if (frameCount>1000) {
+if (frameCount>300) {
   //red.destroyEach();
   gameState=END; 
 }
